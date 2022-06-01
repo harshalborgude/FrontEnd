@@ -1,0 +1,15 @@
+1) Have Installed quokka plugin for javascript and typescript auto suggestion and shows error.
+
+
+
+
+===============================================
+
+How to use GitHub :
+1) login to gitHub 
+2) Create a repo
+3) Copy Link for https  :  https://github.com/harshalborgude/FrontEnd.git
+4) open github terminal , and go to the location to be copy and created, 
+   here same folder name of repo will be created.
+5) use cmd to clone repo :  git clone https://github.com/harshalborgude/FrontEnd.git
+

@@ -1,0 +1,129 @@
+
+JavaScript Types 
+---------------------------------------
+1. Number
+2. String
+3. Boolean
+4. Undefined
+5. Null
+6. Object
+7. Symbol      -> new in ECMAScript 6
+
+
+javascript comparison
+-----------------------------------------
+!==
+===
+>=
+<=
+>
+<
+
+
+JavaScript Variables
+------------------------------------------
+Var
+let                 -> new in ECMAScript 6
+const               -> new in ECMAScript 6
+
+
+
+javascript Conditionals
+--------------------------------------------
+if 
+else
+else if
+ternary operator
+switch
+
+
+
+Javascript logical operator
+---------------------------------------------
+&&
+||
+!
+
+
+Javascript function
+----------------------------------------------
+var a=function name() {}
+function name(){
+}
+return
+
+var a=function name(()=>{
+
+})
+
+
+JavaScript Data structure 
+----------------------------------------------
+Array       -> map,filter,reduce
+Object (class , jsonObject)
+
+
+javascript Looping
+----------------------------------------------
+for
+while
+do while
+forEach        -> new in ECMAScript
+
+for of
+for in
+
+
+JavaScript keyword
+------------------------------------------------
+break
+case
+switch
+class
+const etc  
+
+
+
+DOM selectors
+-------------------------------------------------
+getElementsByTagName  -> to get specific Tag name
+getElementsByClassName -> to get specific classname 
+get getElementsById -> to get specific Id 
+
+querySelector        -> we can get any parameter with this , but only return 0th index of the parameter.
+querySelectorAll     -> we can get any parameter with this , it returns all the elements of the paramter.
+
+getAttribute          -> we can get value of perticular attribute
+setAttribute          -> we can set value of perticular attribute
+
+
+### Changing Style
+
+Style.{property}
+className   // best      -> using this we can get the name for perticular parameter.
+classList   // best      ->  using this we can get the list for perticular parameter
+
+classList.add             -> can remove and add classes with this property.
+classList.remove
+classList.toggle
+
+
+### Bonus
+
+innerHTML       -> can change innerHTML
+
+parentElement
+children
+
+CACHE selectors
+
+=================================================================
+To Practice JS:
+
+1) ES modules: A cartoon deep-dive -> https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/
+2) https://github.com/getify/You-Dont-Know-JS
+3) http://javascript.info/
+4) http://dmitrysoshnikov.com/ecmascript/javascript-the-core-2nd-edition/
+
+
+
