@@ -14,6 +14,7 @@ How to use GitHub :
 5) use cmd to clone repo :  git clone https://github.com/harshalborgude/FrontEnd.git
 6) to check status : git status
 7) to add files : git add <filename> / git add .
-8) to commit the changes : git commit
+8) to commit the changes : git commit -m "message to be added"
 9) to push changes : git push
+10) 
 
