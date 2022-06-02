@@ -35,5 +35,5 @@ curriedMultiply(3)(4);
 
 
 
-// adding 2nd changes to check with git.
+// adding 3rd changes to git
 
