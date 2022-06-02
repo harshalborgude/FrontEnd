@@ -32,3 +32,5 @@ curriedMultiply(3)(4);
 
 // Compose 
 
+//=====================================================================
+// Adding lines to check with git.
