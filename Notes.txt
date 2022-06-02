@@ -12,4 +12,8 @@ How to use GitHub :
 4) open github terminal , and go to the location to be copy and created, 
    here same folder name of repo will be created.
 5) use cmd to clone repo :  git clone https://github.com/harshalborgude/FrontEnd.git
+6) to check status : git status
+7) to add files : git add <filename> / git add .
+8) to commit the changes : git commit
+9) to push changes : git push
 

@@ -35,5 +35,5 @@ curriedMultiply(3)(4);
 
 
 
-// adding 3rd changes to git
+// adding 4th changes to git
 
