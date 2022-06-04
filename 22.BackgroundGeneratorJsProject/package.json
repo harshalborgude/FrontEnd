@@ -1,0 +1,14 @@
+{
+  "name": "22.backgroundgeneratorjsproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "indexJs.js",
+  "scripts": {
+      "build":"browserify indexJs.js > bundle.js && live-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

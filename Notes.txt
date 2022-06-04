@@ -12,9 +12,22 @@ How to use GitHub :
 4) open github terminal , and go to the location to be copy and created, 
    here same folder name of repo will be created.
 5) use cmd to clone repo :  git clone https://github.com/harshalborgude/FrontEnd.git
-6) to check status : git status
-7) to add files : git add <filename> / git add .
-8) to commit the changes : git commit -m "message to be added"
-9) to push changes : git push
-10) 
+
+
+* Pushing changed to git 
+1) Add the files/folders to be added in newly created repo folder.
+2) To check status , will show unadded files : git status
+3) To add folder. : git add file/folder name / got add .
+4) To check files added but not commited :  git status
+5) To commit the changes : git commit -m "adding front end project"
+6) To push changes on git : git push
+
+7) To get the changes from git : git pull.
+
+8) To create the branch : git branch branchName
+9) to get the list of branches : git branch
+10) to get the checkout of the branch : git checkout branchName
+
+11) To merge master branch to new branch : got merge branchName   // already inside the path of the branch to be merged.
+12) to check the diff of local and git file : git diff
 

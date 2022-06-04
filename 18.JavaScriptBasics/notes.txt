@@ -126,4 +126,9 @@ To Practice JS:
 4) http://dmitrysoshnikov.com/ecmascript/javascript-the-core-2nd-edition/
 
 
+* Resourses : 
+1) https://zero-to-mastery.github.io/resources/
+2) https://zerotomastery.io/resources/
+
+
 

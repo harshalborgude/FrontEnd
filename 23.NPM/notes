@@ -1,0 +1,32 @@
+1) Install node.js 
+2) To check version : node -v , npm -v
+3) To create package.json , go into project directort and run : npm init 
+
+* To install global package : (i.e live-server)
+4) To install live-server globally : npm install -g live-server (sudo if any access related error)
+5) Go to file where want to run live serer , in that folder run cmd "live server"
+6) it will run that project. 
+7) optional : live-server D:\VS-Workspace\FrontEnd\22.BackgroundGeneratorJsProject
+8) To change directory : cd /d D:\VS-Workspace\FrontEnd\22.BackgroundGeneratorJsProject
+
+9) live-server watches the changes in current files and automatically changes page content.
+10) it runs on default port : http://127.0.0.1:8080/
+
+* To install local package : (i.e lodash)
+11) to install lodash : npm install lodash
+12) it will add dependency entry of lodash in package.json and will also create node_modules folder in project.
+13) To check lodash working or not , import it and log.
+        import { without } from 'lodash';
+14) if import not working then use cmd, it allows to use required syntax : npm install -g browserify.
+        var _ =require('lodash');
+        console.log(_);
+15) use cmd to bundle js file with browserify : browserify indexJs.js > bundle.js ( refer indexJs.js file for lodash related changes.)
+16) To download / update all the dependencies : npm install
+        package.json -> pom.xml
+        npm install  -> maven update
+17) To avoid running browserify cmd , change package.json , add script as build script.
+     "scripts": {
+      "build":"browswrify indexJs.js > bundle.js && live-server"
+    },
+    then run cmd to run this build script : npm run build  
+    -> using this it will build bundle.js file and will run live-server also.
