@@ -1,0 +1,10 @@
+
+1) npx comes with npm higher version of npm.
+2) To create react app : npx create-react-app robofriends  (will Install react, react-dom, and react-scripts with cra-template...) (with npm to install create-react-app : npm install -g create-react-app)
+3) npx is CLI tool and its purpose is to make it easy to install and manage dependencies hosted in npm registry,its  a package runner.
+4) after creating app , go to project folder and type cmd : npm start
+5) to test the app : npm test
+6) after running npm start , it will be constanly checking code updates , shows error if any , and again starts app after error resolution.
+7) package-lock.json ensures locking of version for all packages so it will not change any way.
+8) .gitignore - will ensure that git will ignore listed files so they cant be pushed on github.
+9) in src folder have all react related files.

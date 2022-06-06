@@ -1,0 +1,12 @@
+
+1) React and react-dom this to packages should be imported , as react can be used to any platform like mbl etc, so react dom also to be imported.
+2) React.StrictMode gives us some extra protection.
+
+* Classes vs Hooks
+1) all the source folder should have capital initial letter.
+
+* Tachyons :
+1) To add predefined classnames , have to import it to use : npm install tachyons   ( https://tachyons.io/docs/ )
+2) just by adding those classnames of tachyons, those effects will be added.
+3) As class is reserved keyword in javascript so have to use className in html for class of html.(refer src/Hello.js) 
+4) Props is a property passed with calling js file , it acts as a arguments , can be accessed with (this.props.<propName>)  - ( refer index.js and hello.js for argument "greeting" )

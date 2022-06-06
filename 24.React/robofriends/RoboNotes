@@ -1,0 +1,22 @@
+
+
+1) In react we always had to return single element as everything enclosed in 1 div , but that was creating
+a problem.
+2) so in recat 16.2 solution we got is enclose every component to be return in React.Fragment
+        <!-- import React, {Fragment} from "react"; -->
+        <!-- if we import fragment then no need to write React.Fragment , only fragment will work,
+             only <> and </> also works same and no need to import also. -->
+        function FAQ() {
+            return (
+                <!-- <React.Fragment> -->
+                    <>
+                    <p>Q. What is React?</p>
+                    <p>A. A JavaScript library for building user interfaces</p>
+                    <p>Q. How do I render sibling elements?</p>
+                    <p>A. Use Fragments</p>
+                    </>
+                <!-- </React.Fragment> -->
+            );
+        }
+
+3) 
