@@ -17,7 +17,7 @@ How to use GitHub :
 * Pushing changed to git 
 1) Add the files/folders to be added in newly created repo folder.
 2) To check status , will show unadded files : git status
-3) To add folder. : git add file/folder name / got add .
+3) To add folder. : git add file/folder name / git add .
 4) To check files added but not commited :  git status
 5) To commit the changes : git commit -m "adding front end project"
 6) To push changes on git : git push
@@ -38,3 +38,4 @@ How to use GitHub :
 1) https://zero-to-mastery.github.io/resources/
 2) https://zerotomastery.io/resources/
 3) Netlify to make project available on open internet.
+4) Free fake api for testing : https://jsonplaceholder.typicode.com/users
