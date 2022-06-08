@@ -2,6 +2,10 @@ import React from "react";
 import Card from'./Card.js';
 
 const CardList = ({ robots }) =>{
+    if(false){
+        throw new Error('Noooooo!');
+    }
+
 
         // <Card id={robots[0].id} name={robots[0].name} email={robots[0].email} username={robots[0].username} />
         // <Card id={robots[1].id} name={robots[1].name} email={robots[1].email} username={robots[1].username} />

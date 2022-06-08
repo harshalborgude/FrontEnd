@@ -1,9 +1,10 @@
 import React ,{Component} from 'react';
-import CardList from "./CardList";
-import { robots } from "./Robots";
-import SearchBox from './SearchBox';
+import CardList from "../components/CardList";
+import { robots } from "../components/Robots";
+import SearchBox from '../components/SearchBox';
 import './App.css';
-import Scroll from './Scroll';
+import Scroll from '../components/Scroll';
+import ErrorBoundry from '../components/ErrorBoundry';
 
 
 class App extends Component{
@@ -46,8 +47,8 @@ class App extends Component{
             return robot.name.toLowerCase().includes(this.state.searchField.toLowerCase())
         })
 
-        if(this.state.robots.length === 0){
-
+        if( !this.state.robots.length ){
+            // If length of robots array is zero.
             return <h1>Loading...</h1>
 
         }else{
@@ -60,8 +61,11 @@ class App extends Component{
                     {/* sending elements as a props to card method. State have converted to props */}
                     {/* <CardList robots={ this.state.robots } /> */}
                     <Scroll>
-                        {/* Scroll componet will be used to scoll only cards and upper part will stay sticked. */}
-                        <CardList robots={ filteredRobots } />
+                        {/* This ErrorBoundry will catch error from child components, and can display something decided or its children as usual. */}
+                        <ErrorBoundry>
+                            {/* Scroll componet will be used to scoll only cards and upper part will stay sticked. */}
+                            <CardList robots={ filteredRobots } />
+                        </ErrorBoundry>
                     </Scroll>
                 </div>
             );
