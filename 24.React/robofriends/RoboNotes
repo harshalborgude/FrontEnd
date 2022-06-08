@@ -19,4 +19,34 @@ a problem.
             );
         }
 
-3) 
+3) In react normally one-way data flow works , so parent elements can send props to childrens.
+    So inside App.js data of robots have sent to CardList , so to its child , but we have to give data of CardList 
+    to SearcBox and vice-versa , and SearcBox and CardList are the neighbour components.
+4) Props are used to send data from 1 to another and it dont change , so in above case we can use 'STATE'
+5) STATE is able to change the values.  State (parent) >> Props (child)
+6) Onchange is an html event which listens each and every change.(ref - SearchBox.js)
+7) on any change , it will call to onSearchChaneg method and it will recieve the event.
+
+8) React coponents comes with some things inside components and that called lifecycle methods,also called 
+   As lifecycle hooks.This methods authomatically trigger with that class.it will get trigger in sequence
+    A) Mounting - in the time of component mounting
+        1) constructor() 
+        2) componentWillMount()
+        3) render()
+        4) componentDidMount()
+            So the order will = constructor -> componetWillMount -> render -> componentDidMount -> render
+
+    B) Updating - update can be caused by changes to props or state
+        1) componentWillRecieveProps()
+        2) shouldComponentUpdate()
+        3) componentWillUpdate()
+        4) render()
+        5) componentDidUpdate()
+    C) Unmounting - after completing usage of component
+        1) 
+
+9) After Props , State , children is 3rd thing , Any component can render its children , like scoll     component have its children as a cardList.
+10) we can add style in JSX  : <div style={{   }}>
+11) CSS properies should be camelCased in JSX.
+    
+   

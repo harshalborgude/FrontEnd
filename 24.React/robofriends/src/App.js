@@ -1,29 +1,76 @@
-import logo from './logo.svg';
+import React ,{Component} from 'react';
+import CardList from "./CardList";
+import { robots } from "./Robots";
+import SearchBox from './SearchBox';
 import './App.css';
-import React from 'react';
+import Scroll from './Scroll';
 
-// converted app to a class component instead of functional component.
-class App extends React.Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+
+class App extends Component{
+    constructor(){
+        super();
+       this.state={
+        // robots: robots,
+        robots: [],
+        searchField: ''
+       }
+       console.log('constructor');
+    }
+
+    componentDidMount(){
+        
+        fetch('https://jsonplaceholder.typicode.com/users')
+        .then(Response=> Response.json())
+        .then(users=> this.setState({ robots: users }))
+
+        // fetch('https://jsonplaceholder.typicode.com/users')
+        // .then(Response =>{
+        //     return Response.json();
+        // })
+        // .then(users=>{
+        //     this.setState({ robots: users });
+        // })
+
+        console.log('robots :',this.state.robots);
+        // this.setState({ robots: robots });
+        console.log('componentDidMount');
+    }
+
+    onSearchChange = (event) => {
+        this.setState({ searchField: event.target.value })
+        // console.log(filteredRobots);
+    }
+
+    render (){
+        const filteredRobots = this.state.robots.filter(robot =>{
+            return robot.name.toLowerCase().includes(this.state.searchField.toLowerCase())
+        })
+
+        if(this.state.robots.length === 0){
+
+            return <h1>Loading...</h1>
+
+        }else{
+            console.log('render');
+            return (
+                <div className='tc'>
+                    <h1 className='f2'>RoboFriends</h1>
+                    <SearchBox searchChange={this.onSearchChange} />
+                    <hr></hr>
+                    {/* sending elements as a props to card method. State have converted to props */}
+                    {/* <CardList robots={ this.state.robots } /> */}
+                    <Scroll>
+                        {/* Scroll componet will be used to scoll only cards and upper part will stay sticked. */}
+                        <CardList robots={ filteredRobots } />
+                    </Scroll>
+                </div>
+            );
+        }
+       
+    }
+
+
+   
 }
 
 export default App;
