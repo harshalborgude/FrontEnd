@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/harshalborgude/FrontEnd/tree/main/24.React/robofriends/static/css/main.18340b35.css",
+    "main.js": "/harshalborgude/FrontEnd/tree/main/24.React/robofriends/static/js/main.09b4a4b5.js",
+    "static/js/787.32032a02.chunk.js": "/harshalborgude/FrontEnd/tree/main/24.React/robofriends/static/js/787.32032a02.chunk.js",
+    "index.html": "/harshalborgude/FrontEnd/tree/main/24.React/robofriends/index.html",
+    "main.18340b35.css.map": "/harshalborgude/FrontEnd/tree/main/24.React/robofriends/static/css/main.18340b35.css.map",
+    "main.09b4a4b5.js.map": "/harshalborgude/FrontEnd/tree/main/24.React/robofriends/static/js/main.09b4a4b5.js.map",
+    "787.32032a02.chunk.js.map": "/harshalborgude/FrontEnd/tree/main/24.React/robofriends/static/js/787.32032a02.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.18340b35.css",
+    "static/js/main.09b4a4b5.js"
+  ]
+}
