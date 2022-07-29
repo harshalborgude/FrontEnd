@@ -1,0 +1,77 @@
+
+/* Body Style  */
+body {
+    /* To remove extra outside spaces of body.  */
+    margin: auto 0;
+}
+
+.header {
+    background-color: #8B0B53;
+}
+
+.main-nav {
+    /* all the list items will be displayed horizontally */
+    display: flex;
+    list-style: none;
+    font-size: 1em;
+    margin: 0;
+}
+
+@media only screen and (max-width:600px){
+    /* Media queries are used to set screen and all things for perticular device , it makes it responsive.  */
+    /* font-size: 0.5em;
+    padding: 0; */
+}
+
+.push {
+    margin-left: auto;
+}
+
+li {
+    padding: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Cover Style  */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #AD810E;
+    height: 70vh;     /* viewport height instead of pixel */
+
+}
+
+/* Grid Style  */
+.grid-wrapper {
+    background-color: #8B0B53;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(200px,300px));
+    justify-content: center;
+
+}
+
+/* Grid Style  */
+ .zone > img {
+    width: 100%;
+}
+
+.zone {
+    background-color: #000000;
+    padding: 10px;
+} 
+
+/* Footer style  */
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+
+

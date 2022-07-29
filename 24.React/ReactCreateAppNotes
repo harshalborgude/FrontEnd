@@ -8,3 +8,30 @@
 7) package-lock.json ensures locking of version for all packages so it will not change any way.
 8) .gitignore - will ensure that git will ignore listed files so they cant be pushed on github.
 9) in src folder have all react related files.
+10) To build the project : npm run build -> This will sort all the files under build folder and we can deploy that build folder , all files will be minified.
+
+* Update project packages.
+11) After getting project which having lower version ,have to install npm,also with each version change have to run it : npm install
+12)  npm audit will give details of issues with current version : npm audit
+13) To fix with latest pateches and security vulnarabilities : npm audit fix   / npm audit fix --force
+14) To update the version of package.json file with latest version : npm update
+15) "react": "^16.2.0" -> Here ^ this sign means , while updating it will update only minor versions ,   not major versions, so there is no possibility of breaking the app.( > this greater than sign if used , can update to greatest latest version , with this chances of breaking the app)
+
+
+* React Error Boundry 
+1) If any Error there in App then it should catch that error and display something good on UI until error gets solved.
+2) It can catch error from any component which is enclosed withing that component : refer ErrorBoundry.js
+3) 
+
+
+* Deploying React App on github.
+1) install github pages : npm install gh-pages --save-dev
+2) In package.json add -> "homepage" : "https://github.com/harshalborgude/FrontEnd/tree/main/24.React/robofriends"
+    -> this homepage should be pointing to main page of project.
+3) Install github pages and add deploy script : npm install --save gh-pages    / yarn ad gh-pages
+4) In scripts add :
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
+5) After this deploy it using cmd : npm run deploy
+6) On github setting , change pages - source to gh-pages , will get the uri and on that uri our build will be live.
+7) can add the same url to website of git , so link can be shown on github repo.can see live app.

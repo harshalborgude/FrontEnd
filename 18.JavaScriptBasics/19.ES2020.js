@@ -2,8 +2,10 @@
 1) BigInt -> 1n
 2) Optional Chaining Operator -> ?
 3) Nullish Coalescing Operator -> ??
-4) Promise.allsettled.
-5) globalThis.
+4) Promise - refer ES6
+5) allsettled - it doesnt care about resolve or reject, it runs all promises regardless they resolved or not.
+6) globalThis.
+7) Promise.any()- refer Es2021
 
 */
 
@@ -59,6 +61,32 @@ console.log("1",sirName1);
 let sirName2 = myObj1?.Harshal_Details?.profession ?? "not entered";
 console.log("2",sirName2);
 //=> 0
+
+
+//=====================================================================
+
+//4) Promise - refer ES6
+
+
+//=====================================================================
+
+// 5) allSettled - it doesnt care about resolve or reject, it runs all promises regardless they resolved or not.
+
+
+const promiseOne= new Promise((resolve,reject)=> 
+    setTimeout(resolve,3000));
+const promiseTwo= new Promise((resolve,reject)=> 
+    setTimeout(reject,3000));
+
+
+// Promise.allSettled([promiseOne,promiseTwo]).then(data => console.log(data))
+//     .catch(e => console.log('something failed',e));
+
+Promise.allSettled([promiseOne,promiseTwo]).then(data => console.log(data))
+    .catch(e => console.log('something failed',e));
+
+
+
 
 
 

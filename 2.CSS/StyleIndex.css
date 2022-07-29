@@ -1,0 +1,119 @@
+/* 
+Css Format 
+* CSS works in a cascading format , last property will be applied on tag.
+* Other two ways are there for adding style , 1) in line style , 2) style tag inside head tag.
+* but using this way , single file can become very much big and for bigger website it will become difficult
+    to maintain.
+    - separate person can work on separate file.
+* css selector.
+
+*/
+
+/* Critical Render Path :
+1) browser will get html file first.
+2) as per that file , it will demand css file.
+3) after that if any external font is there then it will get that file. like font file.
+4) so till getting those files , page will be rendering , untill font file didnt come , txt will not load.
+5) Css minify site is used to compress css file , it will remove all the whitespaces from css file.so size
+    will reduce little bit and faster to load file over intwernet.
+*/
+
+/* format of CSS */
+/* 
+Selector {
+    property : value;
+} 
+*/
+
+body {
+    background-image: url("images/wallBackgroundPic.jpg");
+    background-size: cover;
+    color: white;
+}
+
+/* h2 , p { */
+h2 {
+    color: red;
+    text-align: center;
+    border: 5px dashed;
+    border-color: yellow;
+    cursor: pointer;
+}
+
+p {
+    color: white;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin: 4px;
+}
+
+/* *** Selectors *** */
+/* 
+1) class - for class .class{ } sign is used.
+2) div/id - for dive , # sign is used.
+3) * - symbolize all elements.
+4) element , element - h2,p { } - it means changes applied for h2 and p both.
+5) element element - h2 p { } - it means changes applied for h2->p , p which is inside h2 only.
+6) element1 > element2 : h2 > p : 
+    <h2>
+        <div><p> random text.</p></div>
+    </h2>
+    - this aplies only in above such cases where ele2 is inside ele1 and wrapped in div.
+7) element + element : h2 + p : 
+    <h2> text </h2>
+    <p> text2 <p>
+8) :hover : h2:hover -> this effect will be shown only if mouse point hovers on it.
+9) :last-child / :first-child -> effect will get applied only on last/first things.
+10) !important : only !important marked effect will be applied for all perticular elements , 
+    others will be neglected.
+
+*/
+
+/* All elements will be having border */
+* {
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.para {
+    border: 3px dashded green;
+    text-align: center;
+}
+
+.active {
+    color: orange;
+}
+
+#div1 {
+    /* background: black; */
+    background: rgba(100, 20, 255, 0.5);
+}
+
+#div2 {
+    background: rgba(0, 0, 0, 1);
+}
+
+/* 
+1) font might not be available in some machines , better to use google fonts.
+2) can copy link and paste in html file.
+*/
+
+#divAboutPara {
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 30px;
+    font-style: italic;
+    font-size: 150%;
+    /* font-family: 'Times New Roman', monospace; */
+    font-family: 'Edu+VIC+WA+NT+Beginner',cursive;
+}
+
+img {
+    float: left;
+}
+
+footer {
+    clear: both;
+}

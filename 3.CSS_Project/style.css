@@ -1,0 +1,32 @@
+/* 
+CSS3 included.
+1) css flexbox (css tricks flexbox) - to adjust the content positions.
+2) https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+3) flexbox-froggy.com -> game to learn css flexbox.
+
+4) transitions - https://thoughtbot.com/blog/transitions-and-transforms
+ */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1 {
+    font-family: fantasy;
+    border-bottom: 3px solid pink;
+    width: 400px;
+    text-align: center;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    transition: all 1s;      /* provide transition for 1 sec */ 
+}
+
+img:hover {
+    transform: scale(1.1);   /* upon hover , image will scale bigger for 1 sec. */ 
+}

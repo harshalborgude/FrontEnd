@@ -1,0 +1,22 @@
+
+.boxModel {
+    border: 5px solid red;
+    display: inline-block;
+    padding: 10px 20px 10px 20px;   /* Top Right Bottom Left */
+    margin: 20px 20px 20px 20px;
+    width: 100px;                   /*width and height of the content*/
+    height: 50px;
+
+}
+
+span {
+    font-size: 4em;
+    /* 
+    1) em : means multiple of normal text size , here its 4 times the normal size.
+    2) REM : Relative to the root element (HTML tag)
+    3) % : Relative to the parent element.
+    4) VW : Relative to the viewports's width.
+    5) VH : Relative to the viewport's height. 
+    */
+
+}

@@ -1,5 +1,13 @@
-// let + const : instead of var we will be using let and const in advanced javascript.const will be constant value
-// with const , we cant assign new value again to var . but to json object cant be initialized but vakues of json can be changed. 
+/*
+let + const : instead of var we will be using let and const in advanced javascript.const will be constant value
+with const , we cant assign new value again to var . but to json object cant be initialized but vakues of json can be changed. 
+Promises : A promise is an object that may produce a single value some time in the future.Either a result value 
+or a reson that its not resolved (rejected)
+- Promise can have 3 values - fullfill , rejected , pending.
+-  Promises are great in asynchronous programming.
+
+*/
+
 
 const player ='bobby';
 let experience= 100;
@@ -59,3 +67,68 @@ const add = (a,b) =>{
 // or final
 
 const add = (a,b) =>a+b;
+
+
+//=========================================================================
+
+// Promises
+// Promises : A promise is an object that may produce a single value some time in the future.Either a result value 
+// or a reson that its not resolved (rejected)
+// - Promise can have 3 values - fullfill , rejected , pending, 
+// - if promise fullfilled , then it returns value.
+// -  Promises are great in asynchronous programming.
+
+const promise=new Promise((resolve , reject)=>{
+    if(true){
+        resolve('stuff worked');
+    }else{
+        reject('Error , it broke!');
+    }
+    
+});
+    promise
+    .then(result => result + " !")
+    .then(result2 => {
+        throw Error;
+        console.log('result :',result2);
+    })
+    .catch(() => console.log('Error...'));
+    // catch method will catch any error occures between the chain of .then.
+
+    /*const promise2 = new Promise((resolve,reject)=>{
+        setTimeout(resolve,100,'Hiii');
+    })
+
+    const promise3 = new Promise((resolve,reject)=>{
+        setTimeout(resolve,1000,'Hello');
+    })
+
+    const promise4 = new Promise((resolve,reject)=>{
+        setTimeout(resolve,3000,'Welcome');
+    })
+
+    Promise.all([promise,promise2,promise3,promise4])
+        .then(values =>{
+            console.log(values);
+        })*/
+
+    
+// Real life Use of promises 
+const urls = [
+    'https://jsonplaceholder.typicode.com/users',
+    'https://jsonplaceholder.typicode.com/todos',
+    'https://jsonplaceholder.typicode.com/posts'
+]
+
+Promise.all(urls.map(url=>{
+    return fetch(url).then(response=>response.json());
+})).then(results => {
+    console.log(results[0]);
+    console.log(results[1]);
+    console.log(results[2]);
+}).catch(()=>{
+    console.log('Error!');
+})
+
+
+       

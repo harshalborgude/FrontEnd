@@ -28,7 +28,7 @@ How to use GitHub :
 9) to get the list of branches : git branch
 10) to get the checkout of the branch : git checkout branchName
 
-11) To merge master branch to new branch : got merge branchName   // already inside the path of the branch to be merged.
+11) To merge master branch to new branch : git merge branchName   // already inside the path of the branch to be merged.
 12) to check the diff of local and git file : git diff
 
 

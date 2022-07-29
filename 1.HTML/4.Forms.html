@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+</head>
+<body>
+    <!-- Div : div tag is used to divide content , we can use it to wrap the form,will be usefull for css to
+    add style and divide content.
+    Span : can be added for a specific line only. can add css style for content/line inside span. -->
+
+    <div></div>
+    <span></span>
+    <!-- Forms are used to take inputs.it uses GET http method -->
+
+    <div>
+        <form method="GET">
+            <!-- Name attribute will be act as a key and value will be value associated with the name. -->
+
+            <span>First Name:</span> <input type="text" name="firstname"><br>
+            Last Name :<input type="text" name="lastname"><br>
+            Email : <input type="email" name="email"> <br>
+            BirthDay : <input type="date" name="birthday" ><br>
+            Password : <input type="password" min="5" name="password" id=""><br>
+            
+            <!-- Radio button provide us a clickable buttons, and for both button name is same so can only click
+            any out of them. -->
+            Gender : <br>
+            <input type="radio" name="gender" value="male">Male<br>
+            <input type="radio" name="gender" value="female">Female <br>
+
+            <!-- Check box , with multiple we can select multiple tags  -->
+            Cars : <br>
+            <select name="cars" id="">
+                <option value="volvo">Volvo</option>
+                <option value="audi">Audi</option>
+                <option value="Maruti">Maruti</option>
+
+            </select> <br>
+            Pets : <br>
+            <input type="checkbox" name="pet" value="cats" id="">Cats <br>
+            <input type="checkbox" name="pet" value="dogs" id="">Dogs <br>
+
+            <!-- submit button will provide us a submit button and reset button will be usefull to reset all
+            the data. -->
+            <input type="submit" value="Register" required="required" ><br>
+            <input type="reset"> <br>
+            <!-- <button> 
+                <a href="D:\VS-Workspace\FrontEnd\1.HTML\3.AnchorTagHTML.html">Back</a>
+            </button> -->
+            <a href="D:\VS-Workspace\FrontEnd\1.HTML\3.AnchorTagHTML.html">
+                <h3>Go Back</h3>
+            </a>
+
+
+
+        </form>
+    </div>
+
+</body>
+</html>
+
+ <!-- After submitting this form , this values will get sent with url like This
+This is the one way to send data to backend server.
+
+?
+firstname=harshal
+&lastname=borgude
+&email=harshalborgude97%40gmail.com
+&birthday=2022-07-24
+&password=harsh
+&gender=male
+&cars=volvo
+&pet=cats
+&pet=dogs
+
+
+ -->

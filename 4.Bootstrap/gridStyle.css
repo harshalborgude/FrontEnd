@@ -1,0 +1,7 @@
+
+/* overriding our customize stylesheet for bootstrap files */
+
+.col {
+    background-color: grey;
+    border: 2px solid red;
+}
