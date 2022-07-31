@@ -1,15 +1,30 @@
-/*
-This get elements by tag name return array of button
- var button=document.getElementsByTagName("button")[0];
+// DOM events
 
- 1. Click is a DOM event ->"click","mouseenter","mouseleave"
- button.addEventListener("mouseenter",function(){
-     console.log("click!!");
- })
-*/
+
+// This get Elements by tagname returns array of buttons. 
+// var button = document.getElementsByTagName("button")[0];
+
+// 1. Take care about spellings 
+// 2. Click is a DOM event. ->"click","mouseenter","mouseleave" 
+
+// button.addEventListener("mouseenter",function(){
+//     console.log("Click!!!");  
+// })
+
+
 var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
+
+// On click event , it gets the li Elements , and appends node to li and that li appended to ul. 
+// Adding html elements in this way 
+/*
+button.addEventListener("click",function(){
+    // console.log("Click is working!");
+    var li = document.createElement("li");
+    li.appendChild(document.createTextNode("testing"));
+    ul.appendChild(li);
+}) */
 
 function inputLength() {
     return input.value.length;
@@ -48,3 +63,4 @@ button.addEventListener("click", addListAfterClick);
 
 // to get enter keyboard event, after keypress function recieves one event parameter.
 input.addEventListener("keypress",addListAfterEnter);
+
