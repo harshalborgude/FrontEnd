@@ -1,0 +1,18 @@
+
+Imp API to use 
+----------------------------
+1) https://stripe.com - API to get payment info and other data
+2) https://twilio.com - API to send messages on phone.
+3) https://rapidapi.com/collection/list-of-free-apis
+4) https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/
+5) https://apilist.fun/   - list of categories of api 
+    https://publicapis.dev/search?q=india   - list of india gov api
+    http://www.postalpincode.in/Api-Details?ref=publicapis.dev  -  postal pin code india
+    
+6) https://publicapis.dev/category/public-apis/development  - List of api's 
+7) https://developers.google.com/apis-explorer
+8) https://developers.google.com/calendar/api/v3/reference
+9) https://www.ibm.com/watson/products-services
+10) 
+
+

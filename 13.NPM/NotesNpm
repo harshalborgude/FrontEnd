@@ -1,6 +1,6 @@
 1) Install node.js 
 2) To check version : node -v , npm -v
-3) To create package.json , go into project directort and run : npm init 
+3) To create package.json , go into project directory and run : npm init 
 
 * To install global package : (i.e live-server)
 4) To install live-server globally : npm install -g live-server (sudo if any access related error)

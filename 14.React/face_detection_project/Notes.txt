@@ -1,0 +1,6 @@
+
+1) create app using cmd : npx create-react-app face_detection_project
+2) can start react app using (navigate to the folder) : npm start 
+3) delete some unwanted logo files and content from app.js
+4) install techyons for css without any code. : npm install tachyons
+5) 
