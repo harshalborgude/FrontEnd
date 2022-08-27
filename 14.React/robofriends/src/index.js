@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import 'tachyons';
+import 'tachyons';                  /* https://tachyons.io/docs/  */
 import './index.css';
-import App from './containers/App.js';
+import App from './containers/App.js';     
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

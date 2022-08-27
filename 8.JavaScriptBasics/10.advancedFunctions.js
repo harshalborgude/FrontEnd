@@ -28,12 +28,4 @@ curriedMultiply(3);
 curriedMultiply(3)(4);
 
 
-//=====================================================================
-
-// Compose 
-
-
-
-
-// adding 4th changes to git
 

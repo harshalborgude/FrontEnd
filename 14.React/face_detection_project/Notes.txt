@@ -2,5 +2,29 @@
 1) create app using cmd : npx create-react-app face_detection_project
 2) can start react app using (navigate to the folder) : npm start 
 3) delete some unwanted logo files and content from app.js
-4) install techyons for css without any code. : npm install tachyons
-5) 
+4) install techyons for css without any code. : npm install tachyons   
+     https://tachyons.io/docs/ 
+5) react tilt installed for tilt effect to logo :  npm install --save react-tilt
+    https://www.npmjs.com/package/react-tilt   - get all details from here.
+    getting installation details and classnames to be used from here.
+6) get logo image in png format so it can be transperent , also do whatever changed wanted in that logo component regarding logo.
+7) Css pattern gallery : https://projects.verou.me/css3patterns/   : just copy css properties from here.
+8) Interactive Background , particles.com : https://www.npmjs.com/package/react-particles-js
+    examaple : https://vincentgarreau.com/particles.js/
+    - installl react-particles-js : npm install react-particles-js
+    - follow the page and use particles jsx in app.js file , have made changed to pass params.
+9) z-index : is about component on which layer of the webpage.
+10) Clarify API Docs : https://help.clarifai.com/hc/en-us/articles/4408131744407-Integrating-Clarifai-in-your-React-Javascript-project  
+                       https://clarifai.com/clarifai/main/models/face-detection
+            
+            Front end: https://github.com/aneagoie/face-recognition-brain
+            Back end : https://github.com/aneagoie/face-recognition-brain-api
+    UserName : harshal_borgude_97
+    Password : Harsh@1997
+    https://clarifai.com/harshal_borgude_97/harsh
+    API key : 330514646ac54d7982ddc607cf701275
+11) npm install clarifai : to install clarifai
+12) to detect faces use "app.model.predict" with api key and image url , and process the response.
+
+
+
