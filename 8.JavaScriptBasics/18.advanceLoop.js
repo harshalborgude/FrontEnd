@@ -36,7 +36,7 @@ for(item of 'basket'){
 //==============================================
 // For in 
 
-// for in loop over the object properties
+// for in loop iterates over the object properties
 // iterating over an object properties called as inumerating.
 // for in loop works for both iterables and objects.
 for(item in detailedBasket){
